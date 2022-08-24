@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <div>
       <Link
-        key={data.name} 
         href={{
               pathname: '/spells',
           }}>

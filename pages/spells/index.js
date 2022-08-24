@@ -23,15 +23,15 @@ export default function SpellList(){
 
     return (
         <div>
-        {spells.map(data => 
+        {spells.map(spell => 
                 <Link
-                key={data.name} 
+                key={spell.name} 
                 href={{
                         pathname: 'spells/[spell]',
-                        query: { spell: data.name.replaceAll(' ', '-').toLowerCase()},
+                        query: { spell: spell.name.replaceAll(' ', '-').toLowerCase()},
                     }}>
                 <a> 
-                    {data.name}
+                    {spell.name}
                 </a>
             </Link>
         )}
