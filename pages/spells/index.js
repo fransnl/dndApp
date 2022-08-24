@@ -23,18 +23,18 @@ export default function SpellList(){
 
     return (
         <div>
-        {spells.map(spell => 
-                <Link
-                key={spell.name} 
-                href={{
+            <div className="button-list">
+                {spells.map(spell => 
+                <Link key={spell.name} 
+                        href={{
                         pathname: 'spells/[spell]',
                         query: { spell: spell.name.replaceAll(' ', '-').toLowerCase()},
                     }}>
-                <a> 
-                    {spell.name}
-                </a>
-            </Link>
-        )}
+
+                    <button className="hButton"> {spell.name} </button>
+
+                </Link>)}
+            </div>
         </div>
     )
     

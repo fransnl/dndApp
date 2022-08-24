@@ -1,26 +1,28 @@
-html,
-body {
-  padding: 0;
+html, body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  background-color: white; 
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.button-list{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 10vh;
+  overflow-y: scroll;
+  column-gap: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.hButton{
+  border:none;
+  background-color: #e6d195;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  font-size: 3vw;
 }
