@@ -9,9 +9,11 @@ export default function Spell(){
     const [data, setData] = useState(null)
     const [isLoading, setLoading] = useState(false)
 
+    const url = `https://www.dnd5eapi.co/api/classes/${id}`;
+    
     useEffect(() => {
         setLoading(true)
-        fetch(`https://www.dnd5eapi.co/api/spells/${id}`)
+        fetch(url)
         .then((res) => res.json())
         .then((data) => {
             setData(data)
@@ -23,11 +25,10 @@ export default function Spell(){
     if (!data) return <p>No profile data</p>
 
     const name = data.name
-    const desc = data.desc
 
     return (
         <div>
-            <h1>{name}</h1>
+           <h1>{name}</h1> 
         </div>
     )
 }
