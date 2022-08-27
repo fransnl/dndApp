@@ -1,9 +1,9 @@
 .list{
   display: grid;
-  grid-template-columns: 34vw 34vw; 
+  grid-template-columns: 44vw 44vw; 
   grid-auto-rows: 10vh;
   overflow-y: scroll;
-  margin-left: 15vw;
+  margin-left: 5vw;
   column-gap: 2vw;
   row-gap: 2vh;
   margin-top: 2vh;
