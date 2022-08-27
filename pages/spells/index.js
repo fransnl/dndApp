@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styles from '../../styles/List.module.css';
 import Link from 'next/link'
 
 export default function SpellList(){
@@ -23,7 +24,7 @@ export default function SpellList(){
 
     return (
         <div>
-            <div className="button-list">
+            <div className={styles.list}>
                 {spells.map(spell => 
                 <Link key={spell.name} 
                         href={{
@@ -31,7 +32,7 @@ export default function SpellList(){
                         query: { spell: spell.name.replaceAll(' ', '-').toLowerCase()},
                     }}>
 
-                    <button className="hButton"> {spell.name} </button>
+                    <button className={styles.hButton}> {spell.name} </button>
 
                 </Link>)}
             </div>

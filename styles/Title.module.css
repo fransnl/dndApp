@@ -1,0 +1,35 @@
+.card{
+  display: grid;
+  margin-left: 15vw;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  background-color: gray;
+  width: 70vw;
+  border-radius: 5px;
+  margin-top: 2vh;
+}
+
+.name{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 5vw;
+  text-align: center;
+}
+
+#about{
+  font-size: 3vw;
+  text-align: center;
+}
+
+.box{
+  width: 2vw;
+  height: 2vw;
+  background-color: black;
+  animation: move 5s infinite;
+  margin-left: 5vw;
+}
+
+@keyframes move{
+  50%{ transform: translateX(60vw)}
+  100%{ transform: translateX(0vw)}
+}

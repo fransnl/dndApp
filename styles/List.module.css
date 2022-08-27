@@ -1,0 +1,21 @@
+.list{
+  display: grid;
+  grid-template-columns: 34vw 34vw; 
+  grid-auto-rows: 10vh;
+  overflow-y: scroll;
+  margin-left: 15vw;
+  column-gap: 2vw;
+  row-gap: 2vh;
+  margin-top: 2vh;
+}
+
+.hButton{
+  border:none;
+  background-color:gray; 
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 3vw;
+}
+
+

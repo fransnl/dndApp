@@ -1,21 +1,13 @@
 import styles from '../styles/Home.module.css'
+import Title from './components/title.js'
 import Link from 'next/link'
-import Image from 'next/Image'
-
-
+import MainList from './components/mainList.js'
 
 export default function Home() {
   return (
-    <div>
-      <div className="button-list">
-        <Link href={{pathname: '/spells'}}>
-          <button className="hButton">spells</button>
-        </Link>
-        <Link href={{pathname: '/classes'}}>
-          <button className="hButton">classes</button>
-        </Link>
-      </div>
-     
+    <div className={styles.page}>
+    <Title className></Title>
+    <MainList></MainList> 
     </div>
   )
 }
