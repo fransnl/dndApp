@@ -1,0 +1,15 @@
+.card{
+    display: grid;
+    margin-left: 5vw;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    background-color: gray;
+    width: 90vw;
+    border-radius: 5px;
+    margin-top: 2vh;
+  }
+
+#about{
+  font-size: 3vw;
+  text-align: center;
+}

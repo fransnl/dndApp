@@ -1,8 +1,9 @@
 import styles from '../../styles/Title.module.css';
+import cstyles from '../../styles/Card.module.css'
 
 export default function Title(){
     return(
-        <div className={styles.card}>
+        <div className={cstyles.card}>
         <div className={styles.name}>
             <h1 >Osbourne Greenbottle</h1>
             <div className={styles.box}></div>
