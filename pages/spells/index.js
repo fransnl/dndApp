@@ -29,7 +29,7 @@ export default function SpellList(){
                 <Link key={spell.name} 
                         href={{
                         pathname: 'spells/[spell]',
-                        query: { spell: spell.name.replaceAll(' ', '-').toLowerCase()},
+                        query: { spell: spell.name},
                     }}>
 
                     <button className={styles.hButton}> {spell.name} </button>
