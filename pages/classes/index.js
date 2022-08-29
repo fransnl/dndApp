@@ -24,6 +24,7 @@ export default function SpellList(){
 
     return (
         <div>
+        <Link href='/'><a>back</a></Link>
             <div className={styles.list}>
                 {classes.map(classes => 
                 <Link key={classes.name} href={`classes/${classes.name}`}>

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from 'next/link'
 
 export default function Spell({classes}){
     const router = useRouter()
@@ -6,6 +7,7 @@ export default function Spell({classes}){
 
     return (
         <div>
+            <Link href='/classes'><a>back</a></Link>
            <h1>{id}</h1> 
         </div>
     )
