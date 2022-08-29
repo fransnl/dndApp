@@ -26,11 +26,7 @@ export default function SpellList(){
         <div>
             <div className={styles.list}>
                 {spells.map(spell => 
-                <Link key={spell.name} 
-                        href={{
-                        pathname: 'spells/[spell]',
-                        query: { spell: spell.name},
-                    }}>
+                <Link key={spell.name} href={`spells/${spell.name}`}>
 
                     <button className={styles.hButton}> {spell.name} </button>
 
